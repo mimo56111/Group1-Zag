@@ -91,6 +91,12 @@
     <Compile Include="GPIO_MCAL.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Keypad_ECU.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Keypad_ECU.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="LCD_ECU.c">
       <SubType>compile</SubType>
     </Compile>

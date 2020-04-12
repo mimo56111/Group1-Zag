@@ -6,31 +6,25 @@
 #include <util/delay.h>
 #include "Data_type.h"
 #include "EEPROM_MCAL.h"
+#include "Keypad_ECU.h"
 #include <avr/interrupt.h>
 int main(void){
 	
 	LCD_vInit(Eight_bit,High_Nibble,'A','B',2,'B',3,'B',4);
-	
-	LCD_vsend_cmd(Eight_bit,High_Nibble,'A','B',2,64,'B',4);
-	LCD_vsend_char(Eight_bit,High_Nibble,'A','B',2,'B',4,0);
-	LCD_vsend_char(Eight_bit,High_Nibble,'A','B',2,'B',4,0);
-	LCD_vsend_char(Eight_bit,High_Nibble,'A','B',2,'B',4,10);
-	LCD_vsend_char(Eight_bit,High_Nibble,'A','B',2,'B',4,21);
-	LCD_vsend_char(Eight_bit,High_Nibble,'A','B',2,'B',4,17);
-	LCD_vsend_char(Eight_bit,High_Nibble,'A','B',2,'B',4,10);
-	LCD_vsend_char(Eight_bit,High_Nibble,'A','B',2,'B',4,4);
-	LCD_vsend_char(Eight_bit,High_Nibble,'A','B',2,'B',4,0);
+	keypad_vInit('D');	
+	u8 x ;
+	x=keypad_u8check_press('D');
 	
 	
-	LCD_Move_Cursor(Eight_bit,High_Nibble,'A','B',2,'B',4,1,5);
-	
-	LCD_vsend_char(Eight_bit,High_Nibble,'A','B',2,'B',4,0);
-	
-	
-	
-	LCD_vsend_string(Eight_bit,High_Nibble,'A','B',2,'B',4,"Mahmoud");
 	while(1){
+		while (x==NOTPRESSED){               
+			x=keypad_u8check_press('D');
+		}
 		
+		
+		LCD_vsend_char(Eight_bit,High_Nibble,'A','B',2,'B',4,x);
+		x = NOTPRESSED;
+		_delay_ms(300);
 		}		
 		
 }

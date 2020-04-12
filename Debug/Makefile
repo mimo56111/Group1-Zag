@@ -39,6 +39,7 @@ C_SRCS +=  \
 ../driver.c \
 ../EEPROM_MCAL.c \
 ../GPIO_MCAL.c \
+../Keypad_ECU.c \
 ../LCD_ECU.c \
 ../LED_driver_ECU.c \
 ../Seven_Segment_ECU.c
@@ -55,6 +56,7 @@ Button_driver_ECU.o \
 driver.o \
 EEPROM_MCAL.o \
 GPIO_MCAL.o \
+Keypad_ECU.o \
 LCD_ECU.o \
 LED_driver_ECU.o \
 Seven_Segment_ECU.o
@@ -65,6 +67,7 @@ Button_driver_ECU.o \
 driver.o \
 EEPROM_MCAL.o \
 GPIO_MCAL.o \
+Keypad_ECU.o \
 LCD_ECU.o \
 LED_driver_ECU.o \
 Seven_Segment_ECU.o
@@ -75,6 +78,7 @@ Button_driver_ECU.d \
 driver.d \
 EEPROM_MCAL.d \
 GPIO_MCAL.d \
+Keypad_ECU.d \
 LCD_ECU.d \
 LED_driver_ECU.d \
 Seven_Segment_ECU.d
@@ -85,6 +89,7 @@ Button_driver_ECU.d \
 driver.d \
 EEPROM_MCAL.d \
 GPIO_MCAL.d \
+Keypad_ECU.d \
 LCD_ECU.d \
 LED_driver_ECU.d \
 Seven_Segment_ECU.d
@@ -99,6 +104,8 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
 
 
 
