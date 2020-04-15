@@ -144,7 +144,7 @@ void LCD_display_number(u8 Mood , u8 Nibble ,u8 port ,u8 RS_port ,u8 RS_pin ,u8 
 	LCD_vsend_string(Mood,Nibble,port,RS_port,RS_pin,EN_port,EN_pin,str);
 }
 
-void LCD_display_real_number(u8 Mood , u8 Nibble ,u8 port ,u8 RS_port ,u8 RS_pin ,u8 EN_port,u8 EN_pin,s64 Number){
+void LCD_display_real_number(u8 Mood , u8 Nibble ,u8 port ,u8 RS_port ,u8 RS_pin ,u8 EN_port,u8 EN_pin,f64 Number){
 	u8 str [16];
 	u8 *tmpsign = (Number < 0) ? "-": "";
 	f32 tmpval = (Number < 0) ? -Number : Number;

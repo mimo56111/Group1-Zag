@@ -35,6 +35,7 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../ADC_MCAL.c \
 ../Button_driver_ECU.c \
 ../driver.c \
 ../EEPROM_MCAL.c \
@@ -52,6 +53,7 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+ADC_MCAL.o \
 Button_driver_ECU.o \
 driver.o \
 EEPROM_MCAL.o \
@@ -63,6 +65,7 @@ Seven_Segment_ECU.o
 
 
 OBJS_AS_ARGS +=  \
+ADC_MCAL.o \
 Button_driver_ECU.o \
 driver.o \
 EEPROM_MCAL.o \
@@ -74,6 +77,7 @@ Seven_Segment_ECU.o
 
 
 C_DEPS +=  \
+ADC_MCAL.d \
 Button_driver_ECU.d \
 driver.d \
 EEPROM_MCAL.d \
@@ -85,6 +89,7 @@ Seven_Segment_ECU.d
 
 
 C_DEPS_AS_ARGS +=  \
+ADC_MCAL.d \
 Button_driver_ECU.d \
 driver.d \
 EEPROM_MCAL.d \
@@ -104,6 +109,8 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
 
 
 

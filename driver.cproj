@@ -67,6 +67,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ADC_MCAL.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ADC_MCAL.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Button_driver_ECU.c">
       <SubType>compile</SubType>
     </Compile>

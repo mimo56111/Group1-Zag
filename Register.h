@@ -33,7 +33,10 @@
 //=========================Timer Registers========================
 	/* Timer 1 */
 	#define mySFIOR  *((volatile unsigned char* const)0X50)
-	#define PUD 2
+		#define PUD     2
+		#define myADTS0 5
+		#define myADTS1 6
+		#define myADTS2 7
 //================================================================
 	
 	
@@ -50,4 +53,30 @@
 	#define myEERE    0
 //================================================================
 
+
+//=========================ADC Registers==========================
+	/* ADC Multiplexer Selection Register */
+	#define myADMUX  *((volatile unsigned char* const)0X27)
+		#define myMUX0  0
+		#define myMUX1  1
+		#define myMUX2  2
+		#define myMUX3  3
+		#define myMUX4  4
+		#define myADLAR 5
+		#define myREFS0 6
+		#define myREFS1 7
+	/* ADC Control and status Register A */	
+	#define myADCSRA *((volatile unsigned char* const)0X26)
+		#define myADPS0  0
+		#define myADPS1  1
+		#define myADPS2  2
+		#define myADIE   3
+		#define myADIF   4
+		#define myADATE  5
+		#define myADSC   6
+		#define myADEN   7
+	/* ADC Data Registers */		
+	#define myADCH   *((volatile unsigned char* const)0X25)
+	#define myADCL   *((volatile unsigned char* const)0X24)
+//================================================================
 #endif /* REGISTER_H_ */
