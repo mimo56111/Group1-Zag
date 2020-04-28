@@ -1,30 +1,47 @@
 /*  Author: Mahmoud Ayman*/
 
-#include "LCD_ECU.h"
-#include "LCD_ECU.h"
+
 #define F_CPU 8000000UL
 #include <util/delay.h>
 #include "Data_type.h"
-#include "EEPROM_MCAL.h"
-#include "Keypad_ECU.h"
+#include "LED_driver_ECU.h"
+#include "Timer_driver_MCAL.h"
 #include <avr/interrupt.h>
+
+void inc (void);
+volatile u8 counter1;
+volatile u8 counter2;
+volatile u16 counter3;
 int main(void){
+	TMR0_Get_Configuration(CTC_Mode,TOIE0_disable,OCIE0_enable,PRESCALING_CLK1024);
+	TMR0_Set_Compare_Value(80); 
+	TMR0_vInit();  
 	
-	LCD_vInit(Eight_bit,High_Nibble,'A','B',2,'B',3,'B',4);
-	keypad_vInit('D');	
-	u8 x ;
-	x=keypad_u8check_press('D');
-	
+	sei();
+	LED_vintialize('A',0);
+	LED_vintialize('A',1);
+	LED_vintialize('A',2);
+	callback_OCR0_Compare_Match_Interrupt(&inc);
 	
 	while(1){
-		while (x==NOTPRESSED){               
-			x=keypad_u8check_press('D');
+		if (counter1 >=100){
+			LED_vtoggle('A',0);
+			counter1 = 0;
 		}
-		
-		
-		LCD_vsend_char(Eight_bit,High_Nibble,'A','B',2,'B',4,x);
-		x = NOTPRESSED;
-		_delay_ms(300);
-		}		
-		
+		if (counter2 >=200){
+			LED_vtoggle('A',1);
+			counter2 = 0;
+		}
+		if (counter3 >= 300){
+			LED_vtoggle('A',2);
+			counter3 = 0;
+		}
+			
+	}		
+}
+
+void inc (void){
+	counter1++;
+	counter2++;
+	counter3++;
 }

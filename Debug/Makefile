@@ -42,8 +42,13 @@ C_SRCS +=  \
 ../GPIO_MCAL.c \
 ../Keypad_ECU.c \
 ../LCD_ECU.c \
+../LDR_ECU.c \
 ../LED_driver_ECU.c \
-../Seven_Segment_ECU.c
+../PIR_ECU.c \
+../Relay_ECU.c \
+../Seven_Segment_ECU.c \
+../Temperature_Sensor_ECU.c \
+../Timer_driver_MCAL.c
 
 
 PREPROCESSING_SRCS += 
@@ -60,8 +65,13 @@ EEPROM_MCAL.o \
 GPIO_MCAL.o \
 Keypad_ECU.o \
 LCD_ECU.o \
+LDR_ECU.o \
 LED_driver_ECU.o \
-Seven_Segment_ECU.o
+PIR_ECU.o \
+Relay_ECU.o \
+Seven_Segment_ECU.o \
+Temperature_Sensor_ECU.o \
+Timer_driver_MCAL.o
 
 
 OBJS_AS_ARGS +=  \
@@ -72,8 +82,13 @@ EEPROM_MCAL.o \
 GPIO_MCAL.o \
 Keypad_ECU.o \
 LCD_ECU.o \
+LDR_ECU.o \
 LED_driver_ECU.o \
-Seven_Segment_ECU.o
+PIR_ECU.o \
+Relay_ECU.o \
+Seven_Segment_ECU.o \
+Temperature_Sensor_ECU.o \
+Timer_driver_MCAL.o
 
 
 C_DEPS +=  \
@@ -84,8 +99,13 @@ EEPROM_MCAL.d \
 GPIO_MCAL.d \
 Keypad_ECU.d \
 LCD_ECU.d \
+LDR_ECU.d \
 LED_driver_ECU.d \
-Seven_Segment_ECU.d
+PIR_ECU.d \
+Relay_ECU.d \
+Seven_Segment_ECU.d \
+Temperature_Sensor_ECU.d \
+Timer_driver_MCAL.d
 
 
 C_DEPS_AS_ARGS +=  \
@@ -96,8 +116,13 @@ EEPROM_MCAL.d \
 GPIO_MCAL.d \
 Keypad_ECU.d \
 LCD_ECU.d \
+LDR_ECU.d \
 LED_driver_ECU.d \
-Seven_Segment_ECU.d
+PIR_ECU.d \
+Relay_ECU.d \
+Seven_Segment_ECU.d \
+Temperature_Sensor_ECU.d \
+Timer_driver_MCAL.d
 
 
 OUTPUT_FILE_PATH +=driver.elf
@@ -109,6 +134,16 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
+
+
+
+
+
+
+
+
 
 
 

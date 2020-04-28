@@ -104,5 +104,5 @@
 	Function Arguments   : double Number & unsigned char Mode ,Nibble ,port ,RS_(pin & port) &EN_(pin &port) 
     Function Description : Send a real Number desired to display on the LCD to the LCD 
 */
-void LCD_display_real_number(u8 Mood , u8 Nibble ,u8 port ,u8 RS_port ,u8 RS_pin ,u8 EN_port,u8 EN_pin,s64 Number);
+void LCD_display_real_number(u8 Mood , u8 Nibble ,u8 port ,u8 RS_port ,u8 RS_pin ,u8 EN_port,u8 EN_pin,f64 Number);
 #endif /* LCD_ECU_H_ */

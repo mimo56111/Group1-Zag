@@ -30,13 +30,33 @@
 	#define myPIND   *((volatile unsigned char* const)0X30)
 //================================================================
 
-//=========================Timer Registers========================
+//=========================Timers Registers========================
 	/* Timer 1 */
 	#define mySFIOR  *((volatile unsigned char* const)0X50)
 		#define PUD     2
 		#define myADTS0 5
 		#define myADTS1 6
 		#define myADTS2 7
+		
+		
+	/* Timer 0 */
+	#define myTCNT0	 *((volatile unsigned char* const)0x52)
+	#define myOCR0 	 *((volatile unsigned char* const)0x5C)
+	#define myTIMSK	 *((volatile unsigned char* const)0x59)
+		#define myTOIE0  0
+		#define myOCIE0  1
+	#define myTCCR0	 *((volatile unsigned char* const)0x53)
+		#define myFOC0 	 7
+		#define myWGM00  6
+		#define myCOM01  5
+		#define myCOM00	 4
+		#define myWGM01	 3
+		#define myCS02 	 2
+		#define myCS01 	 1
+		#define myCS00 	 0
+	#define myTIFR	 *((volatile unsigned char* const)0x58)
+		#define myTOV0   0
+		#define myOCF0   1
 //================================================================
 	
 	
@@ -45,6 +65,8 @@
 	#define myEEARL  *((volatile unsigned char* const)0X3E)
 	#define myEEDR   *((volatile unsigned char* const)0X3D)
 	#define myEECR   *((volatile unsigned char* const)0X3C)
+	
+	
 	
 	/* EEPROM Control Register */
 	#define myEERIE   3
