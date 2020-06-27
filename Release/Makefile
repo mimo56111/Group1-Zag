@@ -44,16 +44,12 @@ C_SRCS +=  \
 ../LCD_ECU.c \
 ../LDR_ECU.c \
 ../LED_driver_ECU.c \
-../Motor_ECU.c \
 ../PIR_ECU.c \
 ../Relay_ECU.c \
 ../Seven_Segment_ECU.c \
 ../Temperature_Sensor_ECU.c \
 ../Timer_driver_MCAL.c \
-../TMU.c \
-../Ultrasonic_ECU.c \
-../USART_driver.c \
-../USART_MCAL.c
+../Ultrasonic_ECU.c
 
 
 PREPROCESSING_SRCS += 
@@ -72,16 +68,12 @@ Keypad_ECU.o \
 LCD_ECU.o \
 LDR_ECU.o \
 LED_driver_ECU.o \
-Motor_ECU.o \
 PIR_ECU.o \
 Relay_ECU.o \
 Seven_Segment_ECU.o \
 Temperature_Sensor_ECU.o \
 Timer_driver_MCAL.o \
-TMU.o \
-Ultrasonic_ECU.o \
-USART_driver.o \
-USART_MCAL.o
+Ultrasonic_ECU.o
 
 
 OBJS_AS_ARGS +=  \
@@ -94,16 +86,12 @@ Keypad_ECU.o \
 LCD_ECU.o \
 LDR_ECU.o \
 LED_driver_ECU.o \
-Motor_ECU.o \
 PIR_ECU.o \
 Relay_ECU.o \
 Seven_Segment_ECU.o \
 Temperature_Sensor_ECU.o \
 Timer_driver_MCAL.o \
-TMU.o \
-Ultrasonic_ECU.o \
-USART_driver.o \
-USART_MCAL.o
+Ultrasonic_ECU.o
 
 
 C_DEPS +=  \
@@ -116,16 +104,12 @@ Keypad_ECU.d \
 LCD_ECU.d \
 LDR_ECU.d \
 LED_driver_ECU.d \
-Motor_ECU.d \
 PIR_ECU.d \
 Relay_ECU.d \
 Seven_Segment_ECU.d \
 Temperature_Sensor_ECU.d \
 Timer_driver_MCAL.d \
-TMU.d \
-Ultrasonic_ECU.d \
-USART_driver.d \
-USART_MCAL.d
+Ultrasonic_ECU.d
 
 
 C_DEPS_AS_ARGS +=  \
@@ -138,16 +122,12 @@ Keypad_ECU.d \
 LCD_ECU.d \
 LDR_ECU.d \
 LED_driver_ECU.d \
-Motor_ECU.d \
 PIR_ECU.d \
 Relay_ECU.d \
 Seven_Segment_ECU.d \
 Temperature_Sensor_ECU.d \
 Timer_driver_MCAL.d \
-TMU.d \
-Ultrasonic_ECU.d \
-USART_driver.d \
-USART_MCAL.d
+Ultrasonic_ECU.d
 
 
 OUTPUT_FILE_PATH +=driver.elf
@@ -190,18 +170,10 @@ OUTPUT_FILE_DEP:= ./makedep.mk
 
 
 
-
-
-
-
-
-
-
-
 ./%.o: .././%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.1_830) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32   -o"$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.1.95\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -Os -fpack-struct -fshort-enums -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atmega32   -o"$@" "$<" 
 	@echo Finished building: $<
 
 

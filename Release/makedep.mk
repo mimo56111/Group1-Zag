@@ -20,8 +20,6 @@ LDR_ECU.c
 
 LED_driver_ECU.c
 
-Motor_ECU.c
-
 PIR_ECU.c
 
 Relay_ECU.c
@@ -32,11 +30,5 @@ Temperature_Sensor_ECU.c
 
 Timer_driver_MCAL.c
 
-TMU.c
-
 Ultrasonic_ECU.c
-
-USART_driver.c
-
-USART_MCAL.c
 

@@ -24,17 +24,17 @@
     <avrtoolinterface />
     <avrtool>com.atmel.avrdbg.tool.simulator</avrtool>
     <com_atmel_avrdbg_tool_simulator>
-      <ToolType xmlns="">com.atmel.avrdbg.tool.simulator</ToolType>
-      <ToolName xmlns="">AVR Simulator</ToolName>
-      <ToolNumber xmlns="">
+      <ToolType>com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolName>AVR Simulator</ToolName>
+      <ToolNumber>
       </ToolNumber>
-      <KeepTimersRunning xmlns="">true</KeepTimersRunning>
-      <OverrideVtor xmlns="">false</OverrideVtor>
-      <OverrideVtorValue xmlns="">
+      <KeepTimersRunning>true</KeepTimersRunning>
+      <OverrideVtor>false</OverrideVtor>
+      <OverrideVtorValue>
       </OverrideVtorValue>
-      <Channel xmlns="">
+      <Channel>
         <host>127.0.0.1</host>
-        <port>61693</port>
+        <port>64068</port>
         <ssl>False</ssl>
       </Channel>
     </com_atmel_avrdbg_tool_simulator>
@@ -138,6 +138,12 @@
     <Compile Include="LED_driver_ECU.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Motor_ECU.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Motor_ECU.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="PIR_ECU.c">
       <SubType>compile</SubType>
     </Compile>
@@ -172,6 +178,30 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Timer_driver_MCAL.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="TMU.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="TMU.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Ultasonic_ECU.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Ultrasonic_ECU.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="USART_driver.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="USART_driver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="USART_MCAL.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="USART_MCAL.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>
