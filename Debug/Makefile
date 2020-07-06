@@ -48,6 +48,7 @@ C_SRCS +=  \
 ../PIR_ECU.c \
 ../Relay_ECU.c \
 ../Seven_Segment_ECU.c \
+../SPI_driver.c \
 ../Temperature_Sensor_ECU.c \
 ../Timer_driver_MCAL.c \
 ../TMU.c \
@@ -76,6 +77,7 @@ Motor_ECU.o \
 PIR_ECU.o \
 Relay_ECU.o \
 Seven_Segment_ECU.o \
+SPI_driver.o \
 Temperature_Sensor_ECU.o \
 Timer_driver_MCAL.o \
 TMU.o \
@@ -98,6 +100,7 @@ Motor_ECU.o \
 PIR_ECU.o \
 Relay_ECU.o \
 Seven_Segment_ECU.o \
+SPI_driver.o \
 Temperature_Sensor_ECU.o \
 Timer_driver_MCAL.o \
 TMU.o \
@@ -120,6 +123,7 @@ Motor_ECU.d \
 PIR_ECU.d \
 Relay_ECU.d \
 Seven_Segment_ECU.d \
+SPI_driver.d \
 Temperature_Sensor_ECU.d \
 Timer_driver_MCAL.d \
 TMU.d \
@@ -142,6 +146,7 @@ Motor_ECU.d \
 PIR_ECU.d \
 Relay_ECU.d \
 Seven_Segment_ECU.d \
+SPI_driver.d \
 Temperature_Sensor_ECU.d \
 Timer_driver_MCAL.d \
 TMU.d \
@@ -159,6 +164,8 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
 
 
 

@@ -114,6 +114,9 @@
     <Compile Include="GPIO_MCAL.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="IncFile1.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Keypad_ECU.c">
       <SubType>compile</SubType>
     </Compile>
@@ -163,6 +166,18 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Seven_Segment_ECU.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="SPI_driver.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="SPI_driver.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="SPI_MCAL.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="SPI_MCAL.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="stdmacros.h">

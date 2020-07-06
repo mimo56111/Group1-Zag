@@ -28,6 +28,8 @@ Relay_ECU.c
 
 Seven_Segment_ECU.c
 
+SPI_driver.c
+
 Temperature_Sensor_ECU.c
 
 Timer_driver_MCAL.c

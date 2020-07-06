@@ -59,7 +59,7 @@ usart_ErrorTypes USART_Init(void){
 				}else if(OBJECT->SYNCH_MODE==SYNC_MODE){
 					UBRR_Val = (u32)(((F_CPU)/(2*OBJECT->Baud_Rate))-1);
 				}
-				 UBRRH =(u8) (UBRR_Val>>8);
+				 UBRRH =(u8) (UBRR_Val>>8);   
 				 UBRRL =(u8) (UBRR_Val);
 			/*******************************/
 			/************** Enable transmitter **************/
@@ -235,8 +235,8 @@ void USART_Transmit(u16 data){
 	/**********************************/
 	/***********if the data to be transmitted is 9 bits, write the MSB first*****************/
 		if (OBJECT->Char_Size==USART_9_BIT_CHAR){
-			UCSRB |= ((data>>8)&1);
-		}
+			UCSRB |= ((data>>8)&1);   
+		}							 
 	/***************************************************************************************/
 	/* Put data into buffer, sends the data */
 		UDR = (u8)data;
@@ -244,21 +244,21 @@ void USART_Transmit(u16 data){
 }
 
 u8 USART_Receive(u16 *Ptr_To_Val){
-	u8 local_ParityError =0 ;// 0 Means Error
+	u8 local_ParityError =1 ;// 0 Means Error
 	*Ptr_To_Val = 0x00;
 	/* Wait for data to be received */
 		while(IS_BIT_CLR(UCSRA,RXC));
 	/*******************************/
 	/****************Check if parity error is not ON********/
-		if (READ_BIT(UCSRA,PE) !=1){
+		if (READ_BIT(UCSRA,PE) ==0){
 			/***********if the data to be recieved is 9 bits, get the MSB first*****************/
-				if (OBJECT->Char_Size==USART_9_BIT_CHAR){
-					*Ptr_To_Val = (READ_BIT(UCSRB,TXB8)<<8);
-				}
+				if (OBJECT->Char_Size==USART_9_BIT_CHAR){		   	
+					*Ptr_To_Val = (READ_BIT(UCSRB,RXB8)<<8);       
+				}												   
 			/***********************************************************************************/
 			/* Get and return received data from buffer */
 				*Ptr_To_Val |=UDR;
-				local_ParityError=1;
+				local_ParityError=0;
 		}
 	return local_ParityError;
 }
