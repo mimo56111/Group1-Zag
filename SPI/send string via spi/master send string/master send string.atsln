@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "master send string", "master send string\master send string.cproj", "{FE02D00A-4263-4F20-ADDC-97381F2A9C2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE02D00A-4263-4F20-ADDC-97381F2A9C2D}.Debug|AVR.ActiveCfg = Debug|AVR
+		{FE02D00A-4263-4F20-ADDC-97381F2A9C2D}.Debug|AVR.Build.0 = Debug|AVR
+		{FE02D00A-4263-4F20-ADDC-97381F2A9C2D}.Release|AVR.ActiveCfg = Release|AVR
+		{FE02D00A-4263-4F20-ADDC-97381F2A9C2D}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

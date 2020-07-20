@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "virtual terminal with USART", "virtual terminal with USART.cproj", "{BC2533B8-B008-4C76-BA25-CC69074F896F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC2533B8-B008-4C76-BA25-CC69074F896F}.Debug|AVR.ActiveCfg = Debug|AVR
+		{BC2533B8-B008-4C76-BA25-CC69074F896F}.Debug|AVR.Build.0 = Debug|AVR
+		{BC2533B8-B008-4C76-BA25-CC69074F896F}.Release|AVR.ActiveCfg = Release|AVR
+		{BC2533B8-B008-4C76-BA25-CC69074F896F}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

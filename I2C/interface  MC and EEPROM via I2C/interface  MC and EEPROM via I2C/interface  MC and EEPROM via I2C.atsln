@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "interface  MC and EEPROM via I2C", "interface  MC and EEPROM via I2C.cproj", "{233F46AE-9FD0-42D0-8C39-F0426B7AD704}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{233F46AE-9FD0-42D0-8C39-F0426B7AD704}.Debug|AVR.ActiveCfg = Debug|AVR
+		{233F46AE-9FD0-42D0-8C39-F0426B7AD704}.Debug|AVR.Build.0 = Debug|AVR
+		{233F46AE-9FD0-42D0-8C39-F0426B7AD704}.Release|AVR.ActiveCfg = Release|AVR
+		{233F46AE-9FD0-42D0-8C39-F0426B7AD704}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
