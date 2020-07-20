@@ -114,6 +114,18 @@
     <Compile Include="GPIO_MCAL.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="I2C.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="I2C.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="I2C_MCAL.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="I2C_MCAL.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="IncFile1.h">
       <SubType>compile</SubType>
     </Compile>

@@ -12,6 +12,10 @@ EEPROM_MCAL.c
 
 GPIO_MCAL.c
 
+I2C.c
+
+I2C_MCAL.c
+
 Keypad_ECU.c
 
 LCD_ECU.c
@@ -29,6 +33,8 @@ Relay_ECU.c
 Seven_Segment_ECU.c
 
 SPI_driver.c
+
+SPI_MCAL.c
 
 Temperature_Sensor_ECU.c
 

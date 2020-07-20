@@ -40,6 +40,8 @@ C_SRCS +=  \
 ../driver.c \
 ../EEPROM_MCAL.c \
 ../GPIO_MCAL.c \
+../I2C.c \
+../I2C_MCAL.c \
 ../Keypad_ECU.c \
 ../LCD_ECU.c \
 ../LDR_ECU.c \
@@ -49,6 +51,7 @@ C_SRCS +=  \
 ../Relay_ECU.c \
 ../Seven_Segment_ECU.c \
 ../SPI_driver.c \
+../SPI_MCAL.c \
 ../Temperature_Sensor_ECU.c \
 ../Timer_driver_MCAL.c \
 ../TMU.c \
@@ -69,6 +72,8 @@ Button_driver_ECU.o \
 driver.o \
 EEPROM_MCAL.o \
 GPIO_MCAL.o \
+I2C.o \
+I2C_MCAL.o \
 Keypad_ECU.o \
 LCD_ECU.o \
 LDR_ECU.o \
@@ -78,6 +83,7 @@ PIR_ECU.o \
 Relay_ECU.o \
 Seven_Segment_ECU.o \
 SPI_driver.o \
+SPI_MCAL.o \
 Temperature_Sensor_ECU.o \
 Timer_driver_MCAL.o \
 TMU.o \
@@ -92,6 +98,8 @@ Button_driver_ECU.o \
 driver.o \
 EEPROM_MCAL.o \
 GPIO_MCAL.o \
+I2C.o \
+I2C_MCAL.o \
 Keypad_ECU.o \
 LCD_ECU.o \
 LDR_ECU.o \
@@ -101,6 +109,7 @@ PIR_ECU.o \
 Relay_ECU.o \
 Seven_Segment_ECU.o \
 SPI_driver.o \
+SPI_MCAL.o \
 Temperature_Sensor_ECU.o \
 Timer_driver_MCAL.o \
 TMU.o \
@@ -115,6 +124,8 @@ Button_driver_ECU.d \
 driver.d \
 EEPROM_MCAL.d \
 GPIO_MCAL.d \
+I2C.d \
+I2C_MCAL.d \
 Keypad_ECU.d \
 LCD_ECU.d \
 LDR_ECU.d \
@@ -124,6 +135,7 @@ PIR_ECU.d \
 Relay_ECU.d \
 Seven_Segment_ECU.d \
 SPI_driver.d \
+SPI_MCAL.d \
 Temperature_Sensor_ECU.d \
 Timer_driver_MCAL.d \
 TMU.d \
@@ -138,6 +150,8 @@ Button_driver_ECU.d \
 driver.d \
 EEPROM_MCAL.d \
 GPIO_MCAL.d \
+I2C.d \
+I2C_MCAL.d \
 Keypad_ECU.d \
 LCD_ECU.d \
 LDR_ECU.d \
@@ -147,6 +161,7 @@ PIR_ECU.d \
 Relay_ECU.d \
 Seven_Segment_ECU.d \
 SPI_driver.d \
+SPI_MCAL.d \
 Temperature_Sensor_ECU.d \
 Timer_driver_MCAL.d \
 TMU.d \
@@ -164,6 +179,12 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
+
+
+
+
 
 
 
