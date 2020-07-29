@@ -96,6 +96,12 @@
     <Compile Include="Button_driver_ECU.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="COMM_Service.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="COMM_Service.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Data_type.h">
       <SubType>compile</SubType>
     </Compile>

@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1595851406 source:f:\driver\driver\queu_fuction\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Queu.h"
+
+1595851350 f:\driver\driver\queu_fuction\queu.h
+
+1595851406 source:f:\driver\driver\queu_fuction\queu.c
+	<stdio.h>
+	"Queu.h"
+

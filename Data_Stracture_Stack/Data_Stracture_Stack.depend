@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1595357428 source:f:\driver\driver\data_stracture_stack\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Stack_function.h"
+
+1595357500 f:\driver\driver\data_stracture_stack\stack_function.h
+	<stdio.h>
+
+1595357452 source:f:\driver\driver\data_stracture_stack\stack_function.c
+	"Stack_function.h"
+

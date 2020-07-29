@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1595950995 source:f:\driver\driver\stack_using_linked_list\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stck_linked.h"
+
+1595950631 source:f:\driver\driver\stack_using_linked_list\stck_linked.c
+	<stdio.h>
+	<stdlib.h>
+	"stck_linked.h"
+
+1595950588 f:\driver\driver\stack_using_linked_list\stck_linked.h
+

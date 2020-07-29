@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1577462843 source:e:\3alamny academy\data structure and algorithms\data structure labs\linked list\linked list functions.c
+	"linked list functions.h"
+
+1577462845 e:\3alamny academy\data structure and algorithms\data structure labs\linked list\linked list functions.h
+	<stdio.h>
+	<stdlib.h>
+
+1577460498 source:e:\3alamny academy\data structure and algorithms\data structure labs\linked list\main.c
+	"linked list functions.h"
+
+1577462843 source:e:\3alamny academy\data structure and algorithms\data structure\data structure labs\linked list\linked list functions.c
+	"linked list functions.h"
+
+1577462845 e:\3alamny academy\data structure and algorithms\data structure\data structure labs\linked list\linked list functions.h
+	<stdio.h>
+	<stdlib.h>
+
+1577460498 source:e:\3alamny academy\data structure and algorithms\data structure\data structure labs\linked list\main.c
+	"linked list functions.h"
+
+1577462843 source:e:\mahmoud\deploma\codes\codes-20200421t180807z-001\codes\data structures\data structure labs\linked list\linked list functions.c
+	"linked list functions.h"
+
+1577462845 e:\mahmoud\deploma\codes\codes-20200421t180807z-001\codes\data structures\data structure labs\linked list\linked list functions.h
+	<stdio.h>
+	<stdlib.h>
+
+1577460498 source:e:\mahmoud\deploma\codes\codes-20200421t180807z-001\codes\data structures\data structure labs\linked list\main.c
+	"linked list functions.h"
+

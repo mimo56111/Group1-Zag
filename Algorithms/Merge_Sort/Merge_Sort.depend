@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1595962602 source:f:\driver\driver\algorithms\merge_sort\main.c
+	<stdio.h>
+	<stdlib.h>
+
